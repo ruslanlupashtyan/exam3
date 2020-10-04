@@ -1,0 +1,1829 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'oswald_light';
+  src: url(../fonts/Oswald.ttf);
+  font-weight: 300; }
+@font-face {
+  font-family: 'oswald_regular';
+  src: url(../fonts/Oswald.ttf);
+  font-weight: 400; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000334}}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000339}}
+html {
+  scroll-behavior: smooth; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000342}}
+html,
+body {
+  width: 100%;
+  background-color: #F7F8F3;
+  margin: 0 auto;
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000349}}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000355}}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000360}}
+.section__title {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  font-family: "oswald_regular"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000367}}
+ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000370}}
+button {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000373}}
+a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000376}}
+.svg {
+  height: 60px;
+  width: 507px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000382}}
+.header {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  height: 80px;
+  width: 100%;
+  padding: 0 60px;
+  border-bottom: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.041);
+  font-size: 16px;
+  font-family: "oswald_regular";
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\0000399}}
+  .header .mobile_nav {
+    display: none;
+    margin-left: -10px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003107}}
+    .header .mobile_nav.active {
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003110}}
+    .header .mobile_nav .mobile_nav__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003113}}
+      .header .mobile_nav .mobile_nav__wrapper .mobile_nav__items {
+        display: block;
+        height: 100%;
+        width: 200px;
+        margin: 0 auto;
+        background: #6e774a8e;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+                box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003121}}
+        .header .mobile_nav .mobile_nav__wrapper .mobile_nav__items .mobile_links {
+          text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003123}}
+          .header .mobile_nav .mobile_nav__wrapper .mobile_nav__items .mobile_links a {
+            color: #fff;
+            font-size: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003131}}
+  .header .nav {
+    width: 100%;
+    max-width: 450px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003134}}
+    .header .nav .nav__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003138}}
+      .header .nav .nav__items a {
+        color: #fff;
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003144}}
+  .header .logo {
+    font-family: "oswald_regular";
+    font-size: 30px;
+    margin: 0 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003149}}
+  .header .burger_btn {
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003151}}
+    .header .burger_btn .hamburger .line {
+      width: 42px;
+      height: 3px;
+      background-color: #ecf0f1;
+      display: block;
+      margin: 8px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003161}}
+    .header .burger_btn .hamburger:hover {
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003164}}
+    .header .burger_btn .hamburger.is-active .line:nth-child(2) {
+      opacity: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003167}}
+    .header .burger_btn .hamburger.is-active .line:nth-child(1) {
+      -webkit-transform: translateY(13px) rotate(45deg);
+      transform: translateY(13px) rotate(45deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003173}}
+    .header .burger_btn .hamburger.is-active .line:nth-child(3) {
+      -webkit-transform: translateY(-13px) rotate(-45deg);
+      transform: translateY(-13px) rotate(-45deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003180}}
+  .header .user {
+    width: 100%;
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "oswald_regular"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003186}}
+    .header .user button {
+      text-transform: uppercase;
+      background: none;
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003191}}
+      .header .user button img {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003194}}
+      .header .user button .fas {
+        margin-right: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003201}}
+.section__main {
+  padding: 80px 0 0 0;
+  background-image: url(../images/bg1.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "oswald_regular"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003210}}
+  .section__main .intro {
+    margin-top: 300px;
+    width: 100%;
+    max-width: 670px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003218}}
+    .section__main .intro_title {
+      font-family: "oswald_regular";
+      letter-spacing: 0.28em;
+      font-size: 55px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003226}}
+    .section__main .intro_subscr {
+      font-family: "oswald_light";
+      font-size: 24px;
+      text-transform: none;
+      letter-spacing: 0.28em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003233}}
+    .section__main .intro_btn {
+      height: 70px;
+      width: 270px;
+      font-size: 18px;
+      color: #fff;
+      background: transparent;
+      text-transform: capitalize;
+      border: 1px solid transparent;
+      text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003242}}
+      .section__main .intro_btn a {
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003247}}
+      .section__main .intro_btn .icon_btn2 {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003251}}
+    .section__main .intro_btn:hover {
+      border: 1px solid #fff;
+      text-align: center;
+      -webkit-transition: 150ms;
+      transition: 150ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003255}}
+      .section__main .intro_btn:hover .icon_btn {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003258}}
+      .section__main .intro_btn:hover .icon_btn2 {
+        display: inline;
+        color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003267}}
+.section__label .label_wrap {
+  background-image: url(../images/holder.png);
+  height: 200px;
+  width: 690px;
+  padding: 10px;
+  margin: 100px auto 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003273}}
+  .section__label .label_wrap .label_inner {
+    height: 180px;
+    width: 670px;
+    background-color: #F7F8F3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003277}}
+    .section__label .label_wrap .label_inner .label_subscr {
+      color: #1c1c1b;
+      font-family: "oswald_regular";
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      padding: 40px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003286}}
+    .section__label .label_wrap .label_inner .svg {
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003296}}
+.section__tabs {
+  margin-top: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003298}}
+  .section__tabs .tabs__container {
+    padding-left: 100px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003303}}
+    .section__tabs .tabs__container .tabs {
+      width: 100%;
+      font-family: "oswald_regular"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003306}}
+      .section__tabs .tabs__container .tabs .tabs__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 970px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003314}}
+        .section__tabs .tabs__container .tabs .tabs__nav .tabs__link {
+          border-bottom: 2px solid #CCD7AF;
+          text-decoration: none;
+          color: black;
+          font-size: 30px;
+          letter-spacing: 0.2em;
+          text-align: center;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003324}}
+        .section__tabs .tabs__container .tabs .tabs__nav .tabs__link_active {
+          border-bottom: 2px solid #151614;
+          cursor: defalt;
+          -webkit-transition: 300ms;
+          transition: 300ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003330}}
+      .section__tabs .tabs__container .tabs .tabs__content {
+        margin: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003332}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003335}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003337}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description {
+            max-width: 470px;
+            padding-top: 45px;
+            padding-right: 10px;
+            line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003342}}
+            .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description p {
+              margin: 35px 0;
+              font-family: "oswald_light";
+              font-size: 18px;
+              letter-spacing: 0.04em;
+              color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003350}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__images {
+            position: absolute;
+            left: calc(100% - 800px);
+            margin-left: 200px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003361}}
+.section__products {
+  margin-top: 175px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003363}}
+  .section__products h2 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003366}}
+  .section__products .products {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003368}}
+    .section__products .products .products__item {
+      width: 610px;
+      height: 500px;
+      background-color: #fff;
+      margin: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003377}}
+      .section__products .products .products__item .product_info {
+        height: 100%;
+        width: 100%;
+        padding: 10px 0;
+        border: 1px solid #ced6af;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: "oswald_regular";
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003390}}
+        .section__products .products .products__item .product_info .product_rating {
+          width: 100%;
+          max-width: 150px;
+          margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003395}}
+        .section__products .products .products__item .product_info .product__title {
+          text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003399}}
+      .section__products .products .products__item .product_buy {
+        width: 100%;
+        height: 75px;
+        background-color: #f1f1f1;
+        border: 1px solid #e1e1e1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003406}}
+        .section__products .products .products__item .product_buy .price {
+          width: 160px;
+          height: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-family: "oswald_regular";
+          font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003415}}
+        .section__products .products .products__item .product_buy .product_btn {
+          width: 190px;
+          height: 100%;
+          font-family: "oswald_regular";
+          font-size: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          background-color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003427}}
+  .section__products .modal_cart {
+    position: fixed;
+    z-index: 4;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003435}}
+    .section__products .modal_cart.active {
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003438}}
+    .section__products .modal_cart .modal_bg2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-backdrop-filter: blur(7px);
+              backdrop-filter: blur(7px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003446}}
+    .section__products .modal_cart .card {
+      -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+              box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+      background: #fff;
+      max-width: 800px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      top: calc(50% - 290px);
+      padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003455}}
+      .section__products .modal_cart .card h3 {
+        font-family: "oswald_regular";
+        text-transform: uppercase;
+        font-size: 28px;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003461}}
+      .section__products .modal_cart .card table {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003466}}
+        .section__products .modal_cart .card table thead tr {
+          height: 60px;
+          font-family: "oswald_regular";
+          text-transform: uppercase;
+          letter-spacing: 0.28em;
+          background-color: #6e774a7a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003472}}
+          .section__products .modal_cart .card table thead tr .product {
+            width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003475}}
+          .section__products .modal_cart .card table thead tr .price {
+            width: 16.6%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003478}}
+          .section__products .modal_cart .card table thead tr .quantity {
+            width: 16.6%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003481}}
+          .section__products .modal_cart .card table thead tr .total {
+            width: 16.6%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003487}}
+        .section__products .modal_cart .card table tfoot tr {
+          height: 45px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003489}}
+          .section__products .modal_cart .card table tfoot tr td:last-of-type {
+            font-family: "oswald_regular";
+            text-transform: uppercase;
+            font-size: 18px;
+            background-color: #6e774a;
+            text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003498}}
+        .section__products .modal_cart .card table tbody {
+          font-family: "oswald_regular";
+          text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003501}}
+          .section__products .modal_cart .card table tbody tr {
+            height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003504}}
+            .section__products .modal_cart .card table tbody tr td:nth-child(2) {
+              text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003507}}
+            .section__products .modal_cart .card table tbody tr td:nth-child(3) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003512}}
+              .section__products .modal_cart .card table tbody tr td:nth-child(3) button {
+                width: 24px;
+                height: 24px;
+                color: #fff;
+                background-color: #6e774a9a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003519}}
+            .section__products .modal_cart .card table tbody tr td:nth-child(4) {
+              text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003527}}
+    .section__products .modal_cart.active {
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003530}}
+    .section__products .modal_cart .empty_card {
+      z-index: 5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003536}}
+.section__faq {
+  margin-top: 230px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003538}}
+  .section__faq h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003542}}
+  .section__faq .clicker {
+    font-family: "oswald_light"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003544}}
+    .section__faq .clicker .item {
+      width: 100%;
+      max-width: 570px;
+      display: block;
+      margin: 0 auto;
+      padding: 30px 0;
+      border-top: 2px solid #ced6af;
+      color: #6e774a;
+      letter-spacing: 0.28em;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003554}}
+      .section__faq .clicker .item p {
+        display: none;
+        letter-spacing: 0.04em;
+        line-height: 40px;
+        padding-left: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003560}}
+      .section__faq .clicker .item span {
+        margin-right: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003563}}
+      .section__faq .clicker .item.active {
+        content: '';
+        height: 100%;
+        -webkit-transition: 3000ms;
+        transition: 3000ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003567}}
+        .section__faq .clicker .item.active p {
+          display: block;
+          color: #000;
+          margin: 60px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003578}}
+.section__feedback .feedback {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003585}}
+  .section__feedback .feedback__description {
+    font-family: "oswald_light";
+    font-size: 22px;
+    margin: 35px 0;
+    letter-spacing: 0.2em;
+    line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003592}}
+  .section__feedback .feedback__author {
+    font-family: "oswald_regular";
+    font-size: 24px;
+    text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003597}}
+  .section__feedback .feedback_1 {
+    background-image: url(../images/bg2.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003600}}
+  .section__feedback .feedback_2 {
+    background-image: url(../images/bg3.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003603}}
+  .section__feedback .feedback_3 {
+    background-image: url(../images/bg4.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003606}}
+  .section__feedback .feedback_4 {
+    background-image: url(../images/bg5.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003609}}
+  .section__feedback .feedback_5 {
+    background-image: url(../images/bg6.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003612}}
+  .section__feedback .feedback_6 {
+    background-image: url(../images/bg7.png); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003615}}
+  .section__feedback .feedback .feedback_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 300px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003624}}
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 175px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003627}}
+  .footer_container .footer_block {
+    width: 33.3%;
+    height: 200px;
+    border-top: 2px solid #6e774a;
+    text-align: center;
+    padding-top: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003633}}
+    .footer_container .footer_block a {
+      font-family: "oswald_light";
+      font-size: 14px;
+      line-height: 40px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003641}}
+    .footer_container .footer_block:nth-child(2) {
+      margin: -25px 20px;
+      height: 450px;
+      border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003645}}
+      .footer_container .footer_block:nth-child(2) h3 {
+        font-family: "oswald_regular";
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #6e774a;
+        margin-bottom: 65px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003652}}
+      .footer_container .footer_block:nth-child(2) .social_block {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 180px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003658}}
+        .footer_container .footer_block:nth-child(2) .social_block .fa-twitter {
+          margin-left: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003662}}
+      .footer_container .footer_block:nth-child(2) .vertical_line {
+        display: block;
+        border: 1px solid #6e774a;
+        color: #6e774a;
+        width: 55px;
+        margin: 40px auto;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003671}}
+      .footer_container .footer_block:nth-child(2) .subscribe_block {
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        font-family: "oswald_regular";
+        text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003676}}
+        .footer_container .footer_block:nth-child(2) .subscribe_block .search {
+          margin-top: 30px;
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          max-width: 570px;
+          min-height: 60px;
+          border: 1px solid #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003684}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="search"] {
+            border: none;
+            outline: none;
+            width: 300px;
+            height: 60px;
+            background: transparent;
+            padding-left: 10px;
+            font-family: "oswald_light";
+            font-size: 16px;
+            letter-spacing: 0.28em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003695}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="submit"] {
+            width: 90px;
+            height: 50px;
+            border: none;
+            background: transparent;
+            border-left: 2px solid #6e774a;
+            background: url(../images/arrow.png);
+            background-repeat: no-repeat;
+            background-position: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003706}}
+        .footer_container .footer_block:nth-child(2) .subscribe_block .copyright {
+          font-family: "oswald_light";
+          font-size: 11px;
+          letter-spacing: 0.28em;
+          color: #6e774a;
+          margin-top: 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003720}}
+:root {
+  /* COLORS */
+  --white: #e9e9e9;
+  --gray: #333;
+  --blue: #0367a6;
+  --lightblue: #008997;
+  /* RADII */
+  --button-radius: 0.7rem;
+  /* SIZES */
+  --max-width: 758px;
+  --max-height: 420px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003740}}
+.form__title {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1.25rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003746}}
+.link {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003752}}
+.modal_search {
+  display: none;
+  margin-right: 20px;
+  position: fixed;
+  min-height: 60px;
+  min-width: 500px;
+  top: 100px;
+  right: calc(50% - 250px);
+  border: 1px solid #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003761}}
+  .modal_search.active {
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003764}}
+  .modal_search input[type="search"] {
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 40px;
+    background: transparent;
+    padding-left: 10px;
+    font-family: "oswald_light";
+    font-size: 16px;
+    letter-spacing: 0.28em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003775}}
+  .modal_search input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    border-left: 2px solid #fff;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003787}}
+.modal_form {
+  position: fixed;
+  z-index: 4;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003795}}
+  .modal_form.active {
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003798}}
+  .modal_form .modal_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003806}}
+  .modal_form .container_log {
+    border-radius: var(--button-radius);
+    -webkit-box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+    height: var(--max-height);
+    max-width: var(--max-width);
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 290px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003814}}
+    .modal_form .container_log .container__form {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003819}}
+      .modal_form .container_log .container__form.container--signin {
+        left: 0;
+        width: 50%;
+        z-index: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003825}}
+    .modal_form .container_log .container--signup {
+      left: 0;
+      opacity: 0;
+      width: 50%;
+      z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003831}}
+    .modal_form .container_log .container__overlay {
+      height: 100%;
+      left: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      -webkit-transition: -webkit-transform 0.6s ease-in-out;
+      transition: -webkit-transform 0.6s ease-in-out;
+      transition: transform 0.6s ease-in-out;
+      transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+      width: 50%;
+      z-index: 100; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003840}}
+      .modal_form .container_log .container__overlay .overlay {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        left: -100%;
+        position: relative;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+        width: 200%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003851}}
+        .modal_form .container_log .container__overlay .overlay .overlay__panel {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          height: 100%;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          -webkit-transition: -webkit-transform 0.6s ease-in-out;
+          transition: -webkit-transform 0.6s ease-in-out;
+          transition: transform 0.6s ease-in-out;
+          transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+          width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003863}}
+          .modal_form .container_log .container__overlay .overlay .overlay__panel.overlay--right {
+            right: 0;
+            -webkit-transform: translateX(0);
+                    transform: translateX(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003871}}
+    .modal_form .container_log.right-panel-active .container--signin {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003874}}
+    .modal_form .container_log.right-panel-active .container--signup {
+      -webkit-animation: show 0.6s;
+              animation: show 0.6s;
+      opacity: 1;
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+      z-index: 5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003880}}
+    .modal_form .container_log.right-panel-active .container__overlay {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003883}}
+    .modal_form .container_log.right-panel-active .overlay {
+      -webkit-transform: translateX(50%);
+              transform: translateX(50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003885}}
+      .modal_form .container_log.right-panel-active .overlay .overlay--left {
+        -webkit-transform: translateX(0);
+                transform: translateX(0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003888}}
+      .modal_form .container_log.right-panel-active .overlay .overlay--right {
+        -webkit-transform: translateX(20%);
+                transform: translateX(20%); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003895}}
+.btn_log {
+  background-color: #6e774a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: "oswald_regular";
+  letter-spacing: 0.1rem;
+  padding: 0.9rem 4rem;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003907}}
+.form > ._log {
+  margin-top: 1.5rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003911}}
+.btn_log:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003915}}
+.btn_log:focus {
+  outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003919}}
+.form {
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 3rem;
+  height: 100%;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003930}}
+.input_log {
+  background-color: #fff;
+  border: none;
+  padding: 0.9rem 0.9rem;
+  margin: 0.5rem 0;
+  width: 100%; }
+
+@-webkit-keyframes show {
+  0%,
+    49.99% {
+    opacity: 0;
+    z-index: 1; }
+  50%,
+    100% {
+    opacity: 1;
+    z-index: 5; } }
+
+@keyframes show {
+  0%,
+    49.99% {
+    opacity: 0;
+    z-index: 1; }
+  50%,
+    100% {
+    opacity: 1;
+    z-index: 5; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003960}}
+.screen-reader {
+  width: var(--screenReaderWidth, 1px) !important;
+  height: var(--screenReaderHeight, 1px) !important;
+  padding: var(--screenReaderPadding, 0) !important;
+  border: var(--screenReaderBorder, none) !important;
+  position: var(--screenReaderPosition, absolute) !important;
+  clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+  overflow: var(--screenReaderOverflow, hidden) !important; }
+
+/*
+=====
+CORE STYLES
+=====
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003977}}
+.rating {
+  --uiRatingColor: var(--ratingColor, #eee);
+  --uiRatingColorActive: var(--ratingColorActive, #ffcc00);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 120px;
+  width: 100%;
+  font-size: var(--ratingSize, 1rem);
+  color: var(--uiRatingColor); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\00003990}}
+.rating__control:nth-of-type(1):focus ~ .rating__item:nth-of-type(1)::before,
+.rating__control:nth-of-type(2):focus ~ .rating__item:nth-of-type(2)::before,
+.rating__control:nth-of-type(3):focus ~ .rating__item:nth-of-type(3)::before,
+.rating__control:nth-of-type(4):focus ~ .rating__item:nth-of-type(4)::before,
+.rating__control:nth-of-type(5):focus ~ .rating__item:nth-of-type(5)::before {
+  content: "";
+  -webkit-box-shadow: 0 0 0 var(--ratingOutlineWidth, 4px) var(--uiRatingColorActive);
+          box-shadow: 0 0 0 var(--ratingOutlineWidth, 4px) var(--uiRatingColorActive);
+  position: absolute;
+  top: -.15em;
+  right: 0;
+  bottom: -.15em;
+  left: 0;
+  z-index: -1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031006}}
+.rating__item {
+  cursor: pointer;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031011}}
+.rating__item {
+  padding-left: .25em;
+  padding-right: .25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031016}}
+.rating__star {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  stroke: var(--ratingStroke, #222);
+  stroke-width: var(--ratingStrokeWidth, 1px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031026}}
+.rating:hover,
+.rating__control:nth-of-type(1):checked ~ .rating__item:nth-of-type(1),
+.rating__control:nth-of-type(2):checked ~ .rating__item:nth-of-type(-n+2),
+.rating__control:nth-of-type(3):checked ~ .rating__item:nth-of-type(-n+3),
+.rating__control:nth-of-type(4):checked ~ .rating__item:nth-of-type(-n+4),
+.rating__control:nth-of-type(5):checked ~ .rating__item:nth-of-type(-n+5) {
+  color: var(--uiRatingColorActive); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031035}}
+.rating__item:hover ~ .rating__item {
+  color: var(--uiRatingColor); }
+
+/*
+=====
+SETTINGS
+=====
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031045}}
+.rating {
+  --ratingSize: 1rem;
+  --ratingColor: #eee;
+  --ratingColorActive: #6E774A; }
+
+/*
+=====
+DEMO
+=====
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031059}}
+.page {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031064}}
+.page__demo {
+  margin: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031068}}
+.page__group {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031074}}
+.page__hint {
+  display: block;
+  font-weight: 700;
+  margin-top: 1rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031084}}
+.slick_arrow {
+  position: absolute;
+  color: #6E774A;
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031090}}
+.slick-prev {
+  top: 540px;
+  left: calc(50% - 10px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031094}}
+.slick-next {
+  left: calc(50% + 10px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031099}}
+.slick_arrow2 {
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  border: 1px solid #fff;
+  color: #6E774A;
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031109}}
+.slick-prev2 {
+  top: 700px;
+  left: calc(50% - 130px);
+  z-index: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031114}}
+.slick-next2 {
+  top: 700px;
+  left: 50%;
+  z-index: 1; }
+
+/* ADAPTIVE */
+/*
+    TODO:
+
+    Переписати костильний header
+    дописати медіа
+    Переглянути і зрозуміти файл func.scss
+
+
+*/
+@media screen and (max-width: 1350px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031136}}
+  .section__tabs {
+    margin-top: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031138}}
+    .section__tabs .tabs__container {
+      padding-left: 100px;
+      width: 100%;
+      max-width: 1170px;
+      margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031143}}
+      .section__tabs .tabs__container .tabs {
+        width: 100%;
+        font-family: "oswald_regular"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031146}}
+        .section__tabs .tabs__container .tabs .tabs__nav {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          list-style-type: none;
+          margin: 0;
+          text-transform: uppercase;
+          width: 100%;
+          max-width: 970px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031154}}
+          .section__tabs .tabs__container .tabs .tabs__nav .tabs__link {
+            border-bottom: 2px solid #CCD7AF;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031164}}
+          .section__tabs .tabs__container .tabs .tabs__nav .tabs__link_active {
+            border-bottom: 2px solid #151614;
+            cursor: defalt;
+            -webkit-transition: 300ms;
+            transition: 300ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031170}}
+        .section__tabs .tabs__container .tabs .tabs__content {
+          margin: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031172}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane {
+            display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031175}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031177}}
+            .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description {
+              width: 100%;
+              padding-top: 45px;
+              padding-right: 10px;
+              line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031182}}
+              .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description p {
+                margin: 35px 0;
+                font-family: "oswald_light";
+                font-size: 18px;
+                letter-spacing: 0.04em;
+                color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031190}}
+            .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__images {
+              position: relative; } }
+@media screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031204}}
+  .section__title {
+    font-size: 3.75vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031209}}
+  .header {
+    height: 12.5vw;
+    padding: 0 3.125vw;
+    font-size: 2.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031213}}
+    .header .nav {
+      max-width: 70.3125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031216}}
+    .header .logo {
+      font-family: "oswald_regular";
+      font-size: 4.6875vw;
+      margin: 0 3.125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031221}}
+    .header .user {
+      width: 100%;
+      max-width: 54.6875vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031225}}
+      .header .user button .fas {
+        margin-right: 0.78125vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031232}}
+  .section__main {
+    padding: 12.5vw 0 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031234}}
+    .section__main .intro {
+      margin-top: 46.875vw;
+      width: 100%;
+      max-width: 104.6875vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031238}}
+      .section__main .intro_title {
+        font-size: 8.59375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031241}}
+      .section__main .intro_subscr {
+        font-size: 3.75vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031244}}
+      .section__main .intro_btn {
+        height: 10.9375vw;
+        width: 42.1875vw;
+        font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031248}}
+        .section__main .intro_btn a {
+          font-size: 2.8125vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031256}}
+  .section__label .label_wrap {
+    height: 31.25vw;
+    width: 107.8125vw;
+    padding: 1.5625vw;
+    margin: 15.625vw auto 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031261}}
+    .section__label .label_wrap .label_inner {
+      height: 28.125vw;
+      width: 104.6875vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031264}}
+      .section__label .label_wrap .label_inner .label_subscr {
+        font-size: 3.75vw;
+        padding: 6.25vw 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031268}}
+      .section__label .label_wrap .label_inner .svg {
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031278}}
+  .section__tabs {
+    margin-top: 18.75vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031280}}
+    .section__tabs .tabs__container {
+      padding-left: 15.625vw;
+      max-width: 182.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031284}}
+      .section__tabs .tabs__container .tabs .tabs__nav {
+        max-width: 151.5625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031286}}
+        .section__tabs .tabs__container .tabs .tabs__nav .tabs__link {
+          font-size: 4.6875vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031290}}
+      .section__tabs .tabs__container .tabs .tabs__content {
+        margin: 12.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031293}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description {
+          max-width: 73.4375vw;
+          padding-top: 7.03125vw;
+          padding-right: 1.5625vw;
+          line-height: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031298}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description p {
+            margin: 5.46875vw 0;
+            font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031303}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__images {
+          left: calc(100% - vw(800px));
+          margin-left: 31.25vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031313}}
+  .section__products {
+    margin-top: 27.34375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031316}}
+    .section__products .products .products__item {
+      width: 95.3125vw;
+      height: 78.125vw;
+      margin: 3.125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031320}}
+      .section__products .products .products__item .product_info {
+        font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031322}}
+        .section__products .products .products__item .product_info .product_rating {
+          max-width: 23.4375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031326}}
+      .section__products .products .products__item .product_buy {
+        height: 11.71875vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031328}}
+        .section__products .products .products__item .product_buy .price {
+          width: 25vw;
+          font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031332}}
+        .section__products .products .products__item .product_buy .product_btn {
+          width: 29.6875vw;
+          font-size: 3.125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031339}}
+    .section__products .modal_cart {
+      top: 12.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031341}}
+      .section__products .modal_cart .card {
+        max-width: 125vw;
+        top: calc(50% - vw(290px));
+        padding: 1.5625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031345}}
+        .section__products .modal_cart .card h3 {
+          font-size: 4.375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031348}}
+        .section__products .modal_cart .card table {
+          margin-top: 1.5625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031351}}
+          .section__products .modal_cart .card table thead tr {
+            height: 9.375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031356}}
+          .section__products .modal_cart .card table tfoot tr {
+            height: 7.03125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031358}}
+            .section__products .modal_cart .card table tfoot tr td:last-of-type {
+              font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031364}}
+          .section__products .modal_cart .card table tbody tr {
+            height: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031367}}
+            .section__products .modal_cart .card table tbody tr td:nth-child(3) {
+              height: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031369}}
+              .section__products .modal_cart .card table tbody tr td:nth-child(3) button {
+                width: 3.75vw;
+                height: 3.75vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031383}}
+  .section__faq {
+    margin-top: 35.9375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031385}}
+    .section__faq h2 {
+      margin-bottom: 7.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031389}}
+    .section__faq .clicker .item {
+      max-width: 89.0625vw;
+      padding: 4.6875vw 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031392}}
+      .section__faq .clicker .item p {
+        line-height: 6.25vw;
+        padding-left: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031396}}
+      .section__faq .clicker .item span {
+        margin-right: 3.90625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031400}}
+      .section__faq .clicker .item.active p {
+        margin: 9.375vw 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031409}}
+  .section__feedback .feedback {
+    height: 125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031411}}
+    .section__feedback .feedback__description {
+      font-size: 3.4375vw;
+      margin: 5.46875vw 0;
+      line-height: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031416}}
+    .section__feedback .feedback__author {
+      font-size: 3.75vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031419}}
+    .section__feedback .feedback .feedback_wrap {
+      padding: 46.875vw 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031425}}
+  .footer_container {
+    margin-top: 27.34375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031427}}
+    .footer_container .footer_block {
+      height: 31.25vw;
+      padding-top: 12.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031430}}
+      .footer_container .footer_block a {
+        font-size: 2.1875vw;
+        line-height: 6.25vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031434}}
+      .footer_container .footer_block:nth-child(2) {
+        margin: -3.90625vw 3.125vw;
+        height: 70.3125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031437}}
+        .footer_container .footer_block:nth-child(2) h3 {
+          font-size: 9.375vw;
+          margin-bottom: 10.15625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031441}}
+        .footer_container .footer_block:nth-child(2) .social_block {
+          max-width: 28.125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031443}}
+          .footer_container .footer_block:nth-child(2) .social_block .fa-twitter {
+            margin-left: 1.5625vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031447}}
+        .footer_container .footer_block:nth-child(2) .vertical_line {
+          width: 8.59375vw;
+          margin: 6.25vw auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031451}}
+        .footer_container .footer_block:nth-child(2) .subscribe_block {
+          font-size: 2.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031453}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .search {
+            margin-top: 4.6875vw;
+            max-width: 89.0625vw;
+            min-height: 9.375vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031457}}
+            .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="search"] {
+              width: 46.875vw;
+              height: 9.375vw;
+              padding-left: 1.5625vw;
+              font-size: 2.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031463}}
+            .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="submit"] {
+              width: 14.0625vw;
+              height: 7.8125vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031468}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .copyright {
+            margin-top: 9.375vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031477}}
+  .modal_search {
+    min-height: 9.375vw;
+    min-width: 78.125vw;
+    margin-right: 3.125vw;
+    top: 15.625vw;
+    right: calc(50% - vw(250px)); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031483}}
+    .modal_search input[type="search"] {
+      width: 62.5vw;
+      height: 6.25vw;
+      padding-left: 1.5625vw;
+      font-size: 2.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031489}}
+    .modal_search input[type="submit"] {
+      width: 6.25vw;
+      height: 6.25vw;
+      margin-top: 1.5625vw; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031495}}
+  .modal_form {
+    top: 12.5vw; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031497}}
+    .modal_form .container_log {
+      top: calc(50% - vw(290px)); } }
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031505}}
+  .header {
+    height: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031507}}
+    .header .logo {
+      font-size: 40px;
+      margin: unset; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031511}}
+    .header .burger_btn {
+      display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031514}}
+    .header .nav {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031517}}
+    .header .user {
+      max-width: 150px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031522}}
+      .header .user button p {
+        display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031525}}
+      .header .user button img {
+        display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031532}}
+  .section__main {
+    padding: 100px 0 0 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031534}}
+    .section__main .intro {
+      float: none;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031537}}
+      .section__main .intro_title {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031541}}
+      .section__main .intro_subscr {
+        font-size: 18px;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031545}}
+      .section__main .intro_btn {
+        height: 70px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031546}}
+        .section__main .intro_btn:first-of-type {
+          margin-top: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031558}}
+  .section__label .label_wrap {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 100px auto 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031563}}
+    .section__label .label_wrap .label_inner {
+      height: 180px;
+      width: 280px;
+      background-color: #F7F8F3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031567}}
+      .section__label .label_wrap .label_inner .label_subscr {
+        text-align: center;
+        font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031571}}
+      .section__label .label_wrap .label_inner .svg {
+        width: 230px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031578}}
+  .section__tabs {
+    margin-top: 120px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031580}}
+    .section__tabs .tabs__container {
+      padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031583}}
+      .section__tabs .tabs__container .tabs .tabs__nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031586}}
+      .section__tabs .tabs__container .tabs .tabs__content {
+        margin: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031588}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031591}}
+        .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show {
+          position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031595}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description {
+            max-width: 470px;
+            padding-top: 45px;
+            padding-right: unset;
+            line-height: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031600}}
+            .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__description p {
+              margin: 15px 0;
+              font-family: "oswald_light";
+              font-size: 18px;
+              letter-spacing: 0.04em;
+              color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031608}}
+          .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__images {
+            width: 100%;
+            margin: 0 auto;
+            position: inherit;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031614}}
+            .section__tabs .tabs__container .tabs .tabs__content .tabs__pane_show .tab__images img {
+              width: inherit;
+              margin: 0 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031626}}
+  .section__feedback .feedback {
+    height: 200px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031628}}
+    .section__feedback .feedback__description {
+      font-size: 10px;
+      text-align: center;
+      margin: 15px 0;
+      line-height: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031634}}
+    .section__feedback .feedback__author {
+      font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031637}}
+    .section__feedback .feedback .feedback_wrap {
+      padding: 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031643}}
+  .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031647}}
+    .footer_container .footer_block {
+      margin-top: 10px;
+      width: 100%;
+      height: 50px;
+      border-top: none;
+      text-align: center;
+      padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031654}}
+      .footer_container .footer_block a {
+        font-family: "oswald_light";
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #6e774a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031662}}
+      .footer_container .footer_block:nth-child(2) {
+        margin: 10px 0;
+        height: 450px;
+        border: none;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031667}}
+        .footer_container .footer_block:nth-child(2) h3 {
+          font-family: "oswald_regular";
+          font-size: 60px;
+          text-transform: uppercase;
+          color: #6e774a;
+          margin-bottom: 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031674}}
+        .footer_container .footer_block:nth-child(2) .social_block {
+          margin: 0 auto 20px;
+          width: 100%;
+          max-width: 180px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031680}}
+          .footer_container .footer_block:nth-child(2) .social_block .fab {
+            font-size: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031684}}
+        .footer_container .footer_block:nth-child(2) .vertical_line {
+          display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031687}}
+        .footer_container .footer_block:nth-child(2) .subscribe_block {
+          font-size: 14px;
+          text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031690}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .search {
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 90%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031694}}
+            .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="search"] {
+              width: 300px;
+              height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031698}}
+            .footer_container .footer_block:nth-child(2) .subscribe_block .search input[type="submit"] {
+              width: 90px;
+              height: 50px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031703}}
+          .footer_container .footer_block:nth-child(2) .subscribe_block .copyright {
+            font-size: 14px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031716}}
+  .modal_search {
+    min-height: 40px;
+    min-width: 200px;
+    top: 100px;
+    right: calc(50% - 100px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031721}}
+    .modal_search input[type="search"] {
+      width: 150px;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programming\/beetroot\/homeworks\/exam3\/scss\/style\.scss}line{font-family:\000031727}}
+    .modal_search input[type="submit"] {
+      width: 40px;
+      height: 40px;
+      margin-top: 10px; } }
+
+/*# sourceMappingURL=style.css.map */

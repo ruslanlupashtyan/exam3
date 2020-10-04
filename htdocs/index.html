@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.">
+	<title>CBD</title>
+	<link rel="shortcut icon" href="../images/acela-cbd-favicon.png" type="image/png" />
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../fonts/style.css">
+	<link rel="stylesheet" href="../fontawesome-free-5.13.1-web/css/all.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+		</script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="mobile_nav">
+			<div class="mobile_nav__wrapper">
+				<div class="mobile_nav__items">
+					<li class="mobile_links"><a href="#">home</a></li>
+					<li class="mobile_links"><a href="#dev">products</a></li>
+					<li class="mobile_links"><a href="#faqs">faqs</a></li>
+					<li class="mobile_links"><a href="#contact">contact us</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<ul class="nav__items">
+				<li class="links"><a href="#">home</a></li>
+				<li class="links"><a href="#dev">products</a></li>
+				<li class="links"><a href="#faqs">faqs</a></li>
+				<li class="links"><a href="#contact">contact us</a></li>
+			</ul>
+		</div>
+		<div class="logo">
+			<h3 class="header__logo">
+				cbd
+			</h3>
+		</div>
+		<div class="burger_btn">
+			<div class="hamburger" id="hamburger-1">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="user">
+			<button class="login_btn" id="login_btn">
+				<p>login</p>
+				<img src="../images/user.png" alt="user_icon">
+			</button>
+			<button class="search_btn" id="search_btn">
+				<p><i class="fas fa-search"></i>search</p>
+				<img src="../images/search_lg.png" alt="search_icon">
+			</button>
+			<button class="cart_btn" id="cart_btn">
+				<p>cart</p>
+				<img src="../images/cart.png" alt="cart_icon">
+			</button>
+		</div>
+	</header>
+	<section class="section section__main">
+		<div class="container clearfix">
+			<div class="modal_form">
+				<div class="modal_bg"></div>
+				<div class="container_log right-panel-active">
+					<!-- Overlay -->
+					<div class="container__overlay">
+						<div class="overlay">
+							<div class="overlay__panel overlay--left">
+								<button class="btn_log" id="signIn">Sign In</button>
+							</div>
+							<div class="overlay__panel overlay--right">
+								<button class="btn_log" id="signUp">Sign Up</button>
+							</div>
+						</div>
+					</div>
+					<!-- Sign In -->
+					<div class="container__form container--signin">
+						<form action="#" class="form" id="form2">
+							<h2 class="form__title">Sign In</h2>
+							<input type="email" placeholder="Email" class="input_log" />
+							<input type="password" placeholder="Password" class="input_log" />
+							<a href="#" class="link">Forgot your password?</a>
+							<button class="btn_log">Sign In</button>
+						</form>
+					</div>
+					<!-- Sign Up -->
+					<div class="container__form container--signup">
+						<form action="#" class="form" id="form1">
+							<h2 class="form__title">Sign Up</h2>
+							<input type="text" placeholder="User" class="input_log" />
+							<input type="email" placeholder="Email" class="input_log" />
+							<input type="password" placeholder="Password" class="input_log" />
+							<button class="btn_log">Sign Up</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal_search">
+				<input type="search" name="" id="">
+				<input type="submit" value="" placeholder="">
+			</div>
+			<div class="intro">
+				<h1 class="intro_title">
+					enchancing life excelling in care
+				</h1>
+				<p class="intro_subscr">
+					Choose Wisely. Choose CBD
+				</p>
+				<button class="intro_btn"> <a href="#dev"> start shoping<span
+							class="icon_btn icon-arrow-right2"></span><span
+							class="icon_btn2 icon-minus">-</span></a></button>
+				<button class="intro_btn">see all products<span class="icon_btn2 icon-minus">-</span><span
+						class="icon_btn icon-arrow-right2"></span> </button>
+			</div>
+		</div>
+	</section>
+	<section class="section section__label">
+		<div class="container">
+			<div class="label_wrap">
+				<div class="label_inner">
+					<p class="label_subscr">
+						we are what we are
+					</p>
+					<svg class="svg">
+						<use xlink:href="../images/sprite.svg#label_ico"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__tabs">
+		<div class="tabs__container">
+			<div class="tabs">
+				<div class="tabs__nav">
+					<a class="tabs__link tabs__link_active" href="#content-1">what is cbd?</a>
+					<a class="tabs__link" href="#content-2">benefits</a>
+					<a class="tabs__link" href="#content-3">our difference</a>
+				</div>
+				<div class="tabs__content">
+					<div class="tabs__pane tabs__pane_show" id="content-1">
+						<div class="tab__description">
+							<h2 class="section__title">what is and how it works</h2>
+							<p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for
+								supporting
+								the
+								body
+								and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.
+							</p>
+							<p>Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD
+								comes
+								from
+								the
+								flowers and leaves of the hemp plant.
+							</p>
+							<p>Why does CBD work? The human body has a vast network of receptors, the endocannabinoid
+								system.
+							</p>
+						</div>
+						<div class="tab__images">
+							<img src="../images/about1.png" alt="about">
+							<img src="../images/about2.png" alt="about">
+						</div>
+					</div>
+					<div class="tabs__pane" id="content-2">
+						<div class="tab__description">
+							<h2 class="section__title"> what is and how it works</h2>
+							<p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for
+								supporting
+								the
+								body
+								and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.
+							</p>
+							<p>Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD
+								comes
+								from
+								the
+								flowers and leaves of the hemp plant.
+							</p>
+							<p>Why does CBD work? The human body has a vast network of receptors, the endocannabinoid
+								system.
+							</p>
+						</div>
+						<div class="tab__images">
+							<img src="../images/about3.png" alt="about">
+							<img src="../images/about4.png" alt="about">
+						</div>
+					</div>
+					<div class="tabs__pane" id="content-3">
+						<div class="tab__description">
+							<h2 class="section__title">what is and how it works</h2>
+							<p>CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for
+								supporting
+								the
+								body
+								and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.
+							</p>
+							<p>Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD
+								comes
+								from
+								the
+								flowers and leaves of the hemp plant.
+							</p>
+							<p>Why does CBD work? The human body has a vast network of receptors, the endocannabinoid
+								system.
+							</p>
+						</div>
+						<div class="tab__images">
+							<img src="../images/about5.png" alt="about">
+							<img src="../images/about6.png" alt="about">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__products" id="dev">
+		<div id="dev">
+			<h2 class="section__title">cbd featuret product</h2>
+			<div class="grid">
+				<div class="products">
+					<div class="products__item" v-for="prod in products">
+						<div class="product_info">
+							<div class="product_rating">
+								<div class="rating">
+									<input type="radio" name="rating-star" class="rating__control screen-reader"
+										id="rc1">
+									<input type="radio" name="rating-star" class="rating__control screen-reader"
+										id="rc2">
+									<input type="radio" name="rating-star" class="rating__control screen-reader"
+										id="rc3">
+									<input type="radio" name="rating-star" class="rating__control screen-reader"
+										id="rc4">
+									<input type="radio" name="rating-star" class="rating__control screen-reader"
+										id="rc5">
+									<label for="rc1" class="rating__item">
+										<svg class="rating__star">
+											<use xlink:href="#star"></use>
+										</svg>
+										<span class="screen-reader">1</span>
+									</label>
+									<label for="rc2" class="rating__item">
+										<svg class="rating__star">
+											<use xlink:href="#star"></use>
+										</svg>
+										<span class="screen-reader">2</span>
+									</label>
+									<label for="rc3" class="rating__item">
+										<svg class="rating__star">
+											<use xlink:href="#star"></use>
+										</svg>
+										<span class="screen-reader">3</span>
+									</label>
+									<label for="rc4" class="rating__item">
+										<svg class="rating__star">
+											<use xlink:href="#star"></use>
+										</svg>
+										<span class="screen-reader">4</span>
+									</label>
+									<label for="rc5" class="rating__item">
+										<svg class="rating__star">
+											<use xlink:href="#star"></use>
+										</svg>
+										<span class="screen-reader">5</span>
+									</label>
+								</div>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="star" viewBox="0 0 26 28">
+										<path
+											d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+									</symbol>
+								</svg>
+							</div>
+							<p class="product__title">
+								{{prod.title}}
+							</p>
+							<div class="products__image">
+								<img :src="`../images/${prod.image}`" :alt="prod.title">
+							</div>
+						</div>
+						<div class="product_buy">
+							<div class="price">
+								{{prod.price | currency}}
+							</div>
+							<button class="product_btn" @click="addToCard(prod)">Add to card</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- v-if задає умову, якщо довжина масиву card більше нуля, то повертається цей блок -->
+			<div class="modal_cart">
+				<div class="modal_bg2"></div>
+				<div class="card" v-if="card.length > 0">
+					<h3>Cart</h3>
+					<table>
+						<thead>
+							<tr>
+								<th class="product">Product</th>
+								<th class="price">Price</th>
+								<th class="quantity">Quantity</th>
+								<th class="total">Total</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="3"></td>
+								<td>TOTAL: {{total | currency}}</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<!-- в тілі таблиці робимо через v-for перебір item в масиві card -->
+							<tr v-for="item in card">
+								<!-- В кожному рядку виводимо дані з масиву. Тобто title і price -->
+								<td>{{item.title}}</td>
+								<td>{{item.price | currency}}</td>
+								<td>
+									<div class="quantity">
+										<button @click="addOne(item)">+</button>
+										<span>{{item.quantity}}</span>
+										<button @click="subOne(item)">-</button>
+									</div>
+								</td>
+								<td>{{item.price * item.quantity | currency}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="empty_card" v-else>
+					<h2>Your cart is empty</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section__faq" id="faqs">
+		<div class="container">
+			<h2 class="section__title">frequently asked question</h2>
+			<ul class="clicker">
+				<li class="item"><span><i class="fas fa-plus"></i></span>What is Cannabidiol (CBD)?
+					<p>1 Lirem</p>
+				</li>
+				<li class="item"><span><i class="fas fa-plus"></i></span>Is Hemp-Derived Cannabidiol (CBD) Legal?
+					<p>Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD
+						products are completely legal in all 50 States. </p>
+				</li>
+				<li class="item"><span><i class="fas fa-plus"></i></span>Are there any negative side effects?
+					<p>3 dotor</p>
+				</li>
+				<li class="item"><span><i class="fas fa-plus"></i></span>Do you offer a return policy?
+					<p>4 amlet</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section__feedback">
+		<div class="feedback feedback_1">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_2">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_3">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_4">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_5">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feedback feedback_6">
+			<div class="container">
+				<div class="feedback_wrap">
+					<div class="feedback__rating">
+						<div class="rating">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc1">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc2">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc3">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc4">
+							<input type="radio" name="rating-star" class="rating__control screen-reader" id="rc5">
+							<label for="rc1" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">1</span>
+							</label>
+							<label for="rc2" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">2</span>
+							</label>
+							<label for="rc3" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">3</span>
+							</label>
+							<label for="rc4" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">4</span>
+							</label>
+							<label for="rc5" class="rating__item">
+								<svg class="rating__star">
+									<use xlink:href="#star"></use>
+								</svg>
+								<span class="screen-reader">5</span>
+							</label>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+							<symbol id="star" viewBox="0 0 26 28">
+								<path
+									d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z" />
+							</symbol>
+						</svg>
+					</div>
+					<div class="feedback__description">
+						I have tried another product after using this one successfully, and I am Back for good! The
+						flavour,
+						the
+						lightness of the oil and the health benefits I have gotten with this oil are amazing!
+					</div>
+					<div class="feedback__author">
+						Mark J.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="contact">
+		<div class="container footer_container">
+			<div class="footer_block footer_rules">
+				<ul class="footer_list rules_list">
+					<li class="rules_link footer_link">
+						<a href="#">
+							privacy policy
+						</a>
+					</li>
+					<li class="rules_link footer_link">
+						<a href="#">
+							terms of use
+						</a>
+					</li>
+					<li class="rules_link footer_link">
+						<a href="#">
+							return policy
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_block footer_social">
+				<h3>
+					cbd
+				</h3>
+				<div class="social_block">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="vertical_line">
+
+				</div>
+				<div class="subscribe_block">
+					<h4>
+						subscribe to newsletter
+					</h4>
+					<div class="search">
+						<input type="search" name="q" placeholder="Email">
+						<input type="submit" value="">
+					</div>
+					<div class="copyright">
+						2018 cbd health
+					</div>
+				</div>
+			</div>
+			<div class="footer_block footer_info">
+				<ul class="footer_list info_list">
+					<li class="info_link footer_link">
+						<a href="#">
+							shipping info
+						</a>
+					</li>
+					<li class="info_link footer_link">
+						<a href="#">
+							returns / exchanges
+						</a>
+					</li>
+					<li class="info_link footer_link">
+						<a href="#">
+							contact
+						</a>
+					</li>
+				</ul>
+			</div>
+	</footer>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>
