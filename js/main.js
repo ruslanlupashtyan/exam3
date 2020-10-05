@@ -127,7 +127,17 @@ $(document).ready(function () {
     });
 
 
-
+    /*
+    ========================
+    =SEARCH MODAL HIDE/SHOW=
+    ========================
+    */
+    $('.search_btn').click(function () {
+        $('.modal_search').toggleClass('active');
+    })
+    $('.modal_search').click(function () {
+        $('.modal_search').toggleClass('active');
+    })
 
 
 
@@ -148,14 +158,7 @@ $(document).ready(function () {
 
 
 
-    /*
-    ========================
-    =SEARCH MODAL HIDE/SHOW=
-    ========================
-    */
-    $('.search_btn').click(function () {
-        $('.modal_search').toggleClass('active');
-    })
+
 
 
 
@@ -173,6 +176,12 @@ $(document).ready(function () {
     });
 
 
+
+
+    $(document).scroll(function () {
+        let opacity = 0.041 + ($(document).scrollTop() / 250);
+        $('.modal_search__wrap').css({ "background-color": `rgba(110, 119, 74, ${opacity})` })
+    })
 
 
 
